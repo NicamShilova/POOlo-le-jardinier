@@ -5,11 +5,48 @@ from Lettuce import Lettuce
 
 carrot = Carrot() 
 corn = Corn() 
+lettuce = Lettuce() 
+
+valeur = 0
 
 garden = Garden() 
-carrot.grow(8)
-print(carrot)
+carrot.grow(0, 1)
+# garden.add(carrot)
+carrot.grow(carrot.seed(), 2)
 garden.add(carrot)
-corn.grow(8) 
-garden.add(corn) 
+
+garden = Garden() 
+corn.grow(0, 3)
+corn.grow(corn.seed(), 4)
+garden.add(corn)
+
+garden = Garden() 
+lettuce.grow(0, 5)
+lettuce.grow(lettuce.seed(), 6)
+garden.add(lettuce)
+
+garden._plant(carrot) 
+print(carrot.seed())
+garden._plant(corn) 
+print(corn.seed())
+garden._plant(lettuce) 
+print(lettuce.seed())
+
+# garden = Garden() 
+# carrot.grow(8)
+# # print(carrot)
+# garden.add(carrot)
+ 
+# # garden.add(corn) 
+# corn.grow(valeur, 8)
+# valeur = corn.seed()
+# print ("valeur1 " + str(valeur))
+# garden._plant(corn) 
+
+# corn.grow(valeur, 4) 
+# garden.add(corn) 
+# valeur = corn.seed()
+# print ("valeur2 " + str(valeur))
+
+# print(valeur)
 # garden.add # display 8
