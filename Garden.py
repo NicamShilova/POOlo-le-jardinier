@@ -4,8 +4,8 @@ from Corn import Corn
 from Lettuce import Lettuce
     
 carrot = Carrot()
-corn = Corn()
-lettuce = Lettuce()
+# corn = Corn()
+# lettuce = Lettuce()
 
 class Garden():
 
