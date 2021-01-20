@@ -8,7 +8,7 @@ class Corn(Vegetable):
         self.value = 0
 
     def grow(self, number=0):
-        self.value = number
+        self.value += number
 
     # def grow(self, valeur, number=0):
     #     # self.value = 0

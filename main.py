@@ -2,13 +2,13 @@ from Garden import Garden
 from Carrot import Carrot
 from Corn import Corn
 from Lettuce import Lettuce
-# from Jardinier import Jardinier
+from Jardinier import Jardinier
 
 
 
-carrot = Carrot() 
-corn = Corn() 
-lettuce = Lettuce() 
+# carrot = Carrot() 
+# corn = Corn() 
+# lettuce = Lettuce() 
 
 
   
@@ -26,9 +26,9 @@ lettuce = Lettuce()
 # corn = Jardinier("Corn") 
 # lettuce = Jardinier("Lettuce") 
 
-# carrot = Jardinier.Vege("Carrot")
-# corn = Jardinier.Vege("Corn") 
-# lettuce = Jardinier.Vege("Lettuce")
+carrot = Jardinier.Vege("Carrot")
+corn = Jardinier.Vege("Corn") 
+lettuce = Jardinier.Vege("Lettuce")
 
 valeur = 0
 
