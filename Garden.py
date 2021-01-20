@@ -1,25 +1,28 @@
-# from Vegetable import Vegetable
+# Importing extern classes
 from Carrot import Carrot
 from Corn import Corn
 from Lettuce import Lettuce
     
 carrot = Carrot()
-# corn = Corn()
-# lettuce = Lettuce()
+
+test = 0
 
 class Garden():
 
+    # Initialisation
     def __init__(self):
-        self.p = []
+        self.list = []
+        self.count = 0
 
+    # Initialising list of vegetables
     def add(self, veg):
-        # veg.grow(8)
-        # print(veg.seed())
-        self.p.append(veg)
-        print ("liste " + str(self.p))
+        self.list.append(veg)
+        self.count = len(self.list)
 
+    # Detecting vegetable name
     def _plant(self, cls=carrot):
-        print (cls.__module__)
+        return cls.__module__
 
-
-    # def _plant(self, cls=Tomato())
+    # Counting numbers of vegetables
+    def counting(self, veg):
+        return veg.seed()

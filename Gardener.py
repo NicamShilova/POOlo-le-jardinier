@@ -1,22 +1,22 @@
+# Importing extern classes
 from Carrot import Carrot
 from Corn import Corn
 from Lettuce import Lettuce
 
+# Declaring vegetables
 carrot = Carrot()
 corn = Corn()
 lettuce = Lettuce()
 
-class Jardinier():
+class Gardener():
 
+    # Initialisation
     def __init__(self, types): 
         self.types = {}
     
-
+    # Declaring factory
     @staticmethod
     def Vege(selection):
-        """
-        docstring
-        """
         types = { 
             "Carrot": carrot, 
             "Corn": corn, 

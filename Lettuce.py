@@ -1,18 +1,16 @@
+# Importing extern classes
 from Vegetable import Vegetable
-
-
 
 class Lettuce(Vegetable):
 
+    # Initialisation
     def __init__(self):
         self.value = 0
 
+    # Adding seeds
     def grow(self, number=0):
         self.value += number
-
-    # def grow(self, valeur, number=0):
-    #     valeur += number
-    #     self.value = valeur
     
+    # Get number of seeds
     def seed(self, number=0):
         return self.value
